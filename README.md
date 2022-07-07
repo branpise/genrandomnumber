@@ -13,3 +13,17 @@ awk -v loop=10 -v range=10 'BEGIN{
   } while (count<loop)
 }'
 ```
+```
+root@baremetal:/tmp# sh 2.sh
+10
+4
+9
+6
+8
+3
+7
+2
+5
+1
+root@baremetal:/tmp#
+```
