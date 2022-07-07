@@ -28,7 +28,7 @@ awk -v loop=10 -v range=10 'BEGIN{
 }'
 ```
 
-**OUTPUT**
+**Output**
 ```
 root@baremetal:/tmp# sh 2.sh
 10
@@ -44,11 +44,12 @@ root@baremetal:/tmp# sh 2.sh
 root@baremetal:/tmp#
 ```
 **Usage**
+- Run the below commands to get the output of the bash script:
 ```
 $ bash <script name>
 $ bash genrandom.sh
 ```
-- To run the same script in in debug mode:
+- To run the same script in debug mode:
 ```
 $ bash -x <script-name>
 $ bash -x genrandom.sh
@@ -86,7 +87,7 @@ The first and foremost task would be to monitor the hardware resources like: CPU
 We will need to keep a watch on the metrics like upload/download speed on the NIC cards, transmission speed, etc.
 With the use of 'top' command we can monitor the real time CPU utilization whic shows the average load along with '%CPU' and '%MEM' utilization.
 We can also use 'lscpu -e' we can check the number of cores and the caches shared on the server.
-For memoruy we can use 'cat /proc/meminfo' which will show you the total memory along with the free, buffer, cache.
+For memory we can use 'cat /proc/meminfo' which will show you the total memory along with the free, buffer, cache.
 'free -m' can also be used to monitor memory. To check processes, block IO, CPU activity we can also make use of 'vmstat' command.
 For disk we can use the 'iotop -o' command which will provide the realtim disk activity along with the processes that are performing IO.
 'iostat' command would also help in collecting the disk statistics, for example we can use 'iostat -y 5' command to display each report every 5 seconds, including the CPU stats and the disk stats.
