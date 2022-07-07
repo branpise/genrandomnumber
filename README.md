@@ -1,6 +1,6 @@
 # genrandomnumber
 
-**CODE:
+**CODE**
 
 ```
 awk -v loop=10 -v range=10 'BEGIN{
@@ -16,7 +16,7 @@ awk -v loop=10 -v range=10 'BEGIN{
 }'
 ```
 
-**OUTPUT:
+**OUTPUT**
 ```
 root@baremetal:/tmp# sh 2.sh
 10
