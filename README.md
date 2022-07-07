@@ -1,5 +1,6 @@
 # genrandomnumber
 
+```
 awk -v loop=10 -v range=10 'BEGIN{
   srand()
   do {
@@ -11,3 +12,4 @@ awk -v loop=10 -v range=10 'BEGIN{
     }
   } while (count<loop)
 }'
+```
